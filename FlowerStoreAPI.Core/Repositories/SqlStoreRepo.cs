@@ -16,7 +16,7 @@ namespace FlowerStoreAPI.Repositories
         {
             _context = context; 
         }
-
+        //function called to create stores
         public void CreateStore(Store store)
         {
             if(store == null)
@@ -26,7 +26,7 @@ namespace FlowerStoreAPI.Repositories
 
             _context.Stores.Add(store);
         }
-
+        //function called to delete stores
         public void DeleteStore(Store store)
         {
             if(store == null)
@@ -36,17 +36,17 @@ namespace FlowerStoreAPI.Repositories
 
             _context.Stores.Remove(store);
         }
-
+        //function called to get all stores from database
         public async Task<IEnumerable<Store>> GetAllStores()
         {
             return await _context.Stores.ToListAsync();
         }
-
+        //function called to get specific store by id
         public async Task<Store> GetStoreById(int id)
         {
             return await _context.Stores.FirstOrDefaultAsync(p => p.Id == id);
         }
-
+        //function called to save changes to database
         public bool SaveChanges()
         {
              return (_context.SaveChanges() >= 0);

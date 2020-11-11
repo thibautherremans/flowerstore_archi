@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Collections.Generic;
 using AutoMapper;
 using FlowerStoreAPI.Dtos;
 using FlowerStoreAPI.Dtos.FlowerDTOS;
