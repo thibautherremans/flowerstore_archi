@@ -6,12 +6,10 @@ This is the first version of our flowershop API.
 
 ## Explanation
 
-Momenteel hebben wij de basis endpoints zoals in een standaard API (GET, POST, PUT en DELETE) voor
-zowel de "stores" als de "flowers". 
+At the moment we coded basic endpoints such as GET, POST, PUT and DELETE,
+in both "stores" and "flowers".
 
 ## TODO
 
-- Async tasking is nog niet aanwezig
-- aangepaste enpoints zoals in de opdracht (overzicht van winkels die het meeste verdienen bijvoorbeeld)
-- de testing is nog niet aanwezig
--
+- custom endpoints as given in the instructions (overview on stores that have the highest revenue for example)
+- Testing part
