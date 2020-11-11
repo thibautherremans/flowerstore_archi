@@ -7,7 +7,7 @@ This is the first version of our flowershop API.
 ## Explanation
 
 At the moment we coded basic endpoints such as GET, POST, PUT and DELETE,
-in both "stores" and "flowers".
+in both "stores" and "flowers". We also used mapping, Dto's.
 
 ## TODO
 
