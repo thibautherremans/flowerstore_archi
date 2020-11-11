@@ -14,3 +14,4 @@ zowel de "stores" als de "flowers".
 - Async tasking is nog niet aanwezig
 - aangepaste enpoints zoals in de opdracht (overzicht van winkels die het meeste verdienen bijvoorbeeld)
 - de testing is nog niet aanwezig
+-
