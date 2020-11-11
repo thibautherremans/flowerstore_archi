@@ -2,12 +2,13 @@
 
 ## Introduction
 
-This is the first version of our flowershop API. 
+This is the first version of our flowershop API.
 
 ## Usage
+
 First you will have to change the database connection data in appsettings.json to the data of your personal local server environment. Next, run the command `dotnet ef database update` in the your terminal so you can make use of the endpoints of the API.
 
-You can use `dotnet watch run` to run the project; after you get the notification that the application started navigate to <http://localhost:5000/swagger/index.html>; you will get an overview with all the API methods and a quick method to execute them.
+You can use `dotnet watch run` to run the project; after you get the notification that the application started navigate to <http://localhost:5000/swagger/index.html> or <https://localhost:5001/swagger/index.html>; you will get an overview with all the API methods and a quick method to execute them.
 
 Read through the code; it has been extensively commented.
 
