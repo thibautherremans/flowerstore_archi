@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj": {}
+    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\Flowerstore.csproj": {}
   },
   "projects": {
-    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj": {
+    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\Flowerstore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj",
+        "projectUniqueName": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\Flowerstore.csproj",
         "projectName": "Flowerstore",
-        "projectPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj",
+        "projectPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\Flowerstore.csproj",
         "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-        "outputPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\obj\\",
+        "outputPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",

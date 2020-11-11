@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PstDOb0RPkdYLQdtN3SP5DjTGG0/nF6ePQVB0UBvUWOAkaICFtDcVMcLMwZx/POsikfvpkEKx+xhpLdqCmIvVA==",
+  "dgSpecHash": "kry2QzqJ9c0fPra6mDuCfATcFEQP8TMXWGW51beTtihIU+uFS4tGwJ+qqHmjYSCtUqhT+PM46dgd3pifL240ug==",
   "success": true,
-  "projectFilePath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj",
+  "projectFilePath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\flowerstoreapi.core\\Flowerstore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aaron\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\aaron\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
