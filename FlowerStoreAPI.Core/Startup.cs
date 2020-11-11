@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Microsoft.OpenApi.Models;
 namespace FlowerStoreAPI
 {
     public class Startup
@@ -30,6 +30,15 @@ namespace FlowerStoreAPI
 
             services.AddScoped<IFlowerRepo, SqlFlowerRepo>();
             services.AddScoped<IStoreRepo, SqlStoreRepo>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Flowerstore API",
+                });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -48,6 +57,13 @@ namespace FlowerStoreAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            // Add a UI for swaggerUI
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Flowerstore API V1");
             });
         }
     }

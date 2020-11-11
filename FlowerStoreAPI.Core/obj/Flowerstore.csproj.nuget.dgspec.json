@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bramc\\OneDrive\\Documenten\\SCHOOL\\2nd Year\\wetransfer-662252\\flowerstore\\flowerstoreapi.core\\Flowerstore.csproj": {}
+    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bramc\\OneDrive\\Documenten\\SCHOOL\\2nd Year\\wetransfer-662252\\flowerstore\\flowerstoreapi.core\\Flowerstore.csproj": {
+    "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bramc\\OneDrive\\Documenten\\SCHOOL\\2nd Year\\wetransfer-662252\\flowerstore\\flowerstoreapi.core\\Flowerstore.csproj",
+        "projectUniqueName": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj",
         "projectName": "Flowerstore",
-        "projectPath": "C:\\Users\\bramc\\OneDrive\\Documenten\\SCHOOL\\2nd Year\\wetransfer-662252\\flowerstore\\flowerstoreapi.core\\Flowerstore.csproj",
-        "packagesPath": "C:\\Users\\bramc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bramc\\OneDrive\\Documenten\\SCHOOL\\2nd Year\\wetransfer-662252\\flowerstore\\flowerstoreapi.core\\obj\\",
+        "projectPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\Flowerstore.csproj",
+        "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
+        "outputPath": "E:\\projects\\Architecture\\correct\\wetransfer-662252\\Flowerstore\\FlowerStoreAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bramc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -75,6 +71,14 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.2.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.6.3, )"
             }
           },
           "imports": [
