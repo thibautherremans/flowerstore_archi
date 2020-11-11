@@ -11,5 +11,5 @@ in both "stores" and "flowers".
 
 ## TODO
 
-- custom endpoints as given in the instructions (overview on stores that have the highest revenue for example)
+- custom endpoints as given in the instructions (overview on stores that have the highest revenue for example).
 - Testing part
