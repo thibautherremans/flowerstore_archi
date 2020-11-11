@@ -24,6 +24,7 @@ namespace FlowerStoreAPI
 
         public void ConfigureServices(IServiceCollection services)
         {   
+            //configure connection with MySql database
             services.AddDbContext<FlowerContext>(opt => opt.UseMySql(Configuration.GetConnectionString("FlowerConnection")));
 
             services.AddControllers();
@@ -32,7 +33,6 @@ namespace FlowerStoreAPI
 
             services.AddScoped<IFlowerRepo, SqlFlowerRepo>();
             services.AddScoped<IStoreRepo, SqlStoreRepo>();
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -46,7 +46,7 @@ namespace FlowerStoreAPI
                 c.IncludeXmlComments(filePath);
             });
         }
-
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

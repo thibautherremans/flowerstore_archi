@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FlowerStoreAPI.Dtos.StoreDTOS
 {
+    //Includes all parameters that is required when doing a POST request. 
     public class StoreCreateDto
     {   
         [Required]

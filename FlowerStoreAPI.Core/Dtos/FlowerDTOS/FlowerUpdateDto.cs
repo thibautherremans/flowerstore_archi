@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FlowerStoreAPI.Dtos.FlowerDTOS
 {
+    //Includes all parameters that is required when doing a PUT request. 
     public class FlowerUpdateDto
     {      
         [Required]
