@@ -7,6 +7,7 @@ using FlowerStoreAPI.Models;
 using FlowerStoreAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace FlowerStoreAPI.Controllers
 {   
@@ -25,7 +26,13 @@ namespace FlowerStoreAPI.Controllers
 
 
         //GET api/stores
+        /// <summary>
+        /// Gets you a list of all the stores.
+        /// </summary>
+        /// <returns>A list of stores</returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult <IEnumerable<StoreReadDto>>> GetAllStores()
         {
             var storeItems = await _repository.GetAllStores();
@@ -34,8 +41,15 @@ namespace FlowerStoreAPI.Controllers
         }
 
 
-        //GET api/stores/{id}
+        // GET api/stores/{id}
+        /// <summary>
+        /// Gets you a specific store.
+        /// </summary>
+        /// <param >The unique identifier of the stores</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult <StoreReadDto>> GetStoreById(int id)
         {
             var storeItem =await _repository.GetStoreById(id);
@@ -49,7 +63,15 @@ namespace FlowerStoreAPI.Controllers
 
 
         //POST api/stores
+        /// <summary>
+        /// Creates a new store.
+        /// </summary>
+        /// <param >The unique identifier of the store</param>
+        /// <returns></returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult <StoreReadDto>> CreateStore(StoreCreateDto storeCreateDto){
 
             var storeModel = _mapper.Map<Store>(storeCreateDto);
@@ -63,7 +85,15 @@ namespace FlowerStoreAPI.Controllers
 
 
         //PUT api/stores/{id}
+        /// <summary>
+        /// Changes an existing store.
+        /// </summary>
+        /// <param >The unique identifier of the store</param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult> UpdateStore(int id, StoreUpdateDto storeUpdateDto)
         {
             var storeModelFromRepo =await _repository.GetStoreById(id);
@@ -83,7 +113,15 @@ namespace FlowerStoreAPI.Controllers
 
 
         //DELETE api/stores/{id}
+        /// <summary>
+        /// Deletes an existing store.
+        /// </summary>
+        /// <param >The unique identifier of the store</param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteStore(int id)
         {
             var storeModelFromRepo = await _repository.GetStoreById(id);

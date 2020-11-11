@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Collections.Generic;
 using AutoMapper;
 using FlowerStoreAPI.Dtos;
 using FlowerStoreAPI.Dtos.FlowerDTOS;
 using FlowerStoreAPI.Models;
 using FlowerStoreAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 
 
@@ -24,8 +27,14 @@ namespace FlowerStoreAPI.Controllers
         }
 
 
-        //GET api/flowers
+        // GET api/flowers
+        /// <summary>
+        /// Gets you a list of all the flowers.
+        /// </summary>
+        /// <returns>A list of flowers</returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult <IEnumerable<FlowerReadDto>>> GetAllFlowers()
         {
             var flowerItems = await _repository.GetAllFlowers();
@@ -33,9 +42,15 @@ namespace FlowerStoreAPI.Controllers
             return Ok( _mapper.Map<IEnumerable<FlowerReadDto>>(flowerItems));
         }
 
-
         //GET api/flowers/{id}
+        /// <summary>
+        /// Gets you a specific flower.
+        /// </summary>
+        /// <param>The unique identifier of the flower</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult <FlowerReadDto>> GetFlowerById(int id)
         {
             var flowerItem = await _repository.GetFlowerById(id);
@@ -44,12 +59,18 @@ namespace FlowerStoreAPI.Controllers
                 return Ok( _mapper.Map<FlowerReadDto>(flowerItem));
             }
             return NotFound();
-
         }
 
-
         //POST api/flowers
+          /// <summary>
+        /// Creates a new flower.
+        /// </summary>
+        /// <param>The unique identifier of the flower</param>
+        /// <returns></returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult <FlowerReadDto>> CreateFlower(FlowerCreateDto flowerCreateDto){
 
             var flowerModel = _mapper.Map<Flower>(flowerCreateDto);
@@ -63,7 +84,15 @@ namespace FlowerStoreAPI.Controllers
 
 
         //PUT api/flowers/{id}
+        /// <summary>
+        /// Changes an existing flower.
+        /// </summary>
+        /// <param>The unique identifier of the flower</param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult> UpdateFlower(int id, FlowerUpdateDto flowerUpdateDto)
         {
             var flowerModelFromRepo = await _repository.GetFlowerById(id);
@@ -83,7 +112,15 @@ namespace FlowerStoreAPI.Controllers
 
 
         //DELETE api/flowers/{id}
+        /// <summary>
+        /// Deletes an existing flower.
+        /// </summary>
+        /// <param >The unique identifier of the flower</param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteFlower(int id)
         {
             var flowerModelFromRepo = await _repository.GetFlowerById(id);

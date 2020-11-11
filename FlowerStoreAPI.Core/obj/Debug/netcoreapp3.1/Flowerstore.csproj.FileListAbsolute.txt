@@ -263,9 +263,6 @@ E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Co
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
-E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Threading.Tasks.Extensions.Desktop.dll
-E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Threading.Tasks.Extensions.dll
-E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Threading.Tasks.dll
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -325,3 +322,4 @@ E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Co
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\obj\Debug\netcoreapp3.1\staticwebassets\Flowerstore.StaticWebAssets.Manifest.cache
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\obj\Debug\netcoreapp3.1\staticwebassets\Flowerstore.StaticWebAssets.xml
 E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\obj\Debug\netcoreapp3.1\Flowerstore.genruntimeconfig.cache
+E:\projects\Architecture\correct\wetransfer-662252\Flowerstore\FlowerStoreAPI.Core\bin\Debug\netcoreapp3.1\Flowerstore.xml

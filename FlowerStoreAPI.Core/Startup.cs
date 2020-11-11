@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Reflection;
 using AutoMapper;
 using FlowerStoreAPI.Data;
 using FlowerStoreAPI.Repositories;
@@ -38,6 +40,10 @@ namespace FlowerStoreAPI
                     Version = "v1",
                     Title = "Flowerstore API",
                 });
+
+                var fileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
+                c.IncludeXmlComments(filePath);
             });
         }
 

@@ -46,10 +46,6 @@
               "target": "Package",
               "version": "[3.1.9, )"
             },
-            "Microsoft.Bcl.Async": {
-              "target": "Package",
-              "version": "[1.0.168, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.9, )"
