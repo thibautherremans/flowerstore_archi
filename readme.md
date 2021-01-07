@@ -22,3 +22,4 @@ in both "stores" and "flowers". We also used mapping, Dto's.
 - custom endpoints as given in the instructions (overview on stores that have the highest revenue for example).
 - Testing part
 - Making Async for POST work
+-
